@@ -4,6 +4,9 @@ class LoadingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('ChatApp'),
+      ),
       body: Center(
         child: Text('LoadingPage'),
       ),
