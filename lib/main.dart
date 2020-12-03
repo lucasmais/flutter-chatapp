@@ -1,3 +1,4 @@
+import 'package:chat/src/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -8,16 +9,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ChatApp',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('ChatApp'),
-        ),
-        body: Center(
-          child: Container(
-            child: Text('Hello World'),
-          ),
-        ),
-      ),
+      initialRoute: 'loading',
+      routes: appRoutes,
     );
   }
 }
